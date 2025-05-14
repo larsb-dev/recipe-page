@@ -21,10 +21,12 @@
 }
 
 body {
-font-family: var(--font-family-outfit);
+    margin: 0;
+    font-family: var(--font-family-outfit);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background-color: var(--color-stone-100);
+  color: var(--color-stone-900);
 }
 
 img, picture, video, canvas, svg {
@@ -54,18 +56,6 @@ a {
     background-color: var(--color-rose-50);;
     padding: 30px;
     border-radius: 20px;
-}
-
-#ingredients {
-  /* Add styles for the ingredients section */
-}
-
-#instructions {
-  /* Add styles for the instructions section */
-}
-
-#nutrition {
-  /* Add styles for the nutrition section */
 }
 
 /* Classes */
@@ -114,7 +104,30 @@ hr {
 }
 
 .nutritional-info {
-  /* Add styles for the nutritional info table */
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.nutritional-info th,
+.nutritional-info td {
+    text-align: left;
+    padding: 10px 15px;
+    font-family: var(--font-family-outfit);
+    font-size: var(--font-size-paragraph);
+}
+
+.nutritional-info th {
+    font-weight: 500;
+}
+
+.nutritional-info td {
+    font-weight: var(--font-weight-bold);
+    color: var(--color-brown-800);
+}
+
+.nutritional-info tr:not(:last-child) {
+    border-bottom: 1px solid var(--color-stone-150);
 }
 
 @media (width > 800px) {
